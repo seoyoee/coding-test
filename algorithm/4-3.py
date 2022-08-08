@@ -10,7 +10,7 @@ steps = [(-2, -1), (-2, 1), (2, -1), (2, 1), (-1, -2), (-1, 2), (1, -2), (1, 2)]
 
 # 8가지 방향에 대하여 각 위치로 이동이 가능한지 확인
 for step in steps:
-    if 1 <= row + steps[0] <= 8 and 1 <= col + steps[1] <= 8:
+    if 1 <= row + step[0] <= 8 and 1 <= col + step[1] <= 8:
         count += 1
 
 print(count)
