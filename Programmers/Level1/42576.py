@@ -9,4 +9,5 @@ def solution(participant, completion):
     for d in dic:
         if dic[d] != 0:
             answer = d
+    
     return answer
