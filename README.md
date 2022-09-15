@@ -1,5 +1,5 @@
 # coding-test
 Algorithm study for coding test<br><br>
 
-- [이것이 코딩 테스트다](https://oceanic-warlock-341.notion.site/2805e1f488124490ac9c810c28904402?v=380c305433e94a3eac2a9703d9a987bf)
-- [Programmers](https://oceanic-warlock-341.notion.site/9628c04e837b4e60b6a0f3e4f91b8ebf?v=e0832dcff3ef4e9fb450fc71e23702c5)
+- [이것이 코딩 테스트다](https://nettle-oak-544.notion.site/9e3c603da7ce43728a0c797058be91df?v=e338f36165de4ef39644be5e0d229d4e)
+- [Programmers](https://nettle-oak-544.notion.site/c092cc05c04b4dbfb5fac309920b3512?v=c9ee833a1573412eb19f0bd3222941f9)
