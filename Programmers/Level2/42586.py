@@ -1,29 +1,18 @@
-import math
-
-progresses = list(map(int, input().split()))
-speeds = list(map(int, input().split()))
-
-n = len(progresses)
-days = []
-answer = []
-count = 1
+def solution(progresses, speeds):
+    days = []
+    answer = {}
     
-for i in range(n):
-    days.append(math.ceil((100 - progresses[i]) / speeds[i]))
-
-i = 0
-while i <= (n - 1):
-    j = 1
-    if i == (n - 1):
-        answer.append(count)
-        break
-    while days[i] > days[i + j]:
-        count += 1
-        j += 1
-        if i + j == n:
-            break
-    answer.append(count)
-    i += j
-    count = 1
-
-print(answer)
+    for p,s in zip(progresses, speeds):
+        days.append(-((p - 100) // s))
+    
+    answer[days[0]] = 1
+    
+    for i in range(1, len(days)):
+        if days[i] < days[i - 1]:
+            days[i] = days[i - 1]
+        if days[i] in answer:
+            answer[days[i]] += 1
+        else:
+            answer[days[i]] = 1
+    
+    return list(answer.values())
