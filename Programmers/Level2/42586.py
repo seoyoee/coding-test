@@ -16,3 +16,21 @@ def solution(progresses, speeds):
             answer[days[i]] = 1
     
     return list(answer.values())
+
+def solution(progresses, speeds):
+    days = []
+    answer = []
+    
+    for i in range(len(progresses)):
+        days.append(-((progresses[i] - 100) // speeds[i]))
+    print(days)
+    
+    k = 0
+    for i in range(len(days)):
+        if i == 0 or days[i] > k:
+            answer.append(1)
+            k = days[i]
+        else:
+            answer[-1] += 1
+    
+    return answer
